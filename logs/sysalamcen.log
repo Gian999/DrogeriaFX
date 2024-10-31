@@ -1,0 +1,18 @@
+2024-10-31T07:47:33.738-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 22.0.2 with PID 18944 (started by User in D:\Descargas\POO gian\DrogeriaFX)
+2024-10-31T07:47:33.756-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-10-31T07:47:34.954-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-31T07:47:35.121-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 15 JPA repository interfaces.
+2024-10-31T07:47:35.906-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31T07:47:36.029-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-31T07:47:36.087-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-31T07:47:36.628-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-31T07:47:36.687-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-31T07:47:36.893-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2838f0f0
+2024-10-31T07:47:36.897-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-31T07:47:38.940-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31T07:47:39.006-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-31T07:47:39.730-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-31T07:47:40.293-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 7.706 seconds (process running for 9.292)
+2024-10-31T07:48:35.083-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-31T07:48:35.087-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-31T07:48:35.091-05:00  INFO 18944 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
