@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="pe.edu.upeu.drogeriafx.control.FormatoController" spacing="10">
-    <Label text="Gestión de Formatos" styleClass="titulo"/>
+<VBox fx:id="miContenedor" spacing="10" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.drogeriafx.control.FormatoController">
+    <Label styleClass="titulo" text="Gestión de Formatos" />
 
     <TableView fx:id="formatoTable" VBox.vgrow="ALWAYS">
-        <columns>
-            <TableColumn fx:id="colId" text="ID" />
-            <TableColumn fx:id="colNombre" text="Nombre" />
-            <TableColumn fx:id="colDescripcion" text="Descripción" />
-        </columns>
+
     </TableView>
 
-    <HBox spacing="10" alignment="CENTER">
-        <TextField fx:id="txtNombre" promptText="Nombre del Formato"/>
-        <TextField fx:id="txtDescripcion" promptText="Descripción"/>
-        <Button text="Agregar" onAction="#agregarFormato"/>
-        <Button text="Actualizar" onAction="#actualizarFormato"/>
-        <Button text="Eliminar" onAction="#eliminarFormato"/>
+    <HBox alignment="CENTER" spacing="10">
+        <TextField fx:id="txtNombreFormato" promptText="Nombre del Formato" />
+        <TextField fx:id="txtDescripcion" promptText="Descripción" />
+        <Button onAction="#validarFormulario" text="Agregar" />
+        <Button onAction="#actualizarFormato" text="Actualizar" />
+        <Button onAction="#eliminarFormato" text="Eliminar" />
     </HBox>
+   <ComboBox fx:id="cbxTipoFormato" prefWidth="150.0" />
+    <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="398.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" GridPane.rowSpan="2" />
+
 </VBox>

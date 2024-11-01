@@ -25,6 +25,8 @@ public class MenuMenuItemDao implements MenuMenuItenDaoI{
         lista.add(new MenuMenuItenTO("Principal", "Cliente", "cliente"));
         lista.add(new MenuMenuItenTO("Principal", "Rep. Venta", "repventa"));
         lista.add(new MenuMenuItenTO("Principal", "Reg. Venta", "regventa"));
+        lista.add(new MenuMenuItenTO("Principal", "Formatos", "miformato"));
+
         List<MenuMenuItenTO> accesoReal = new ArrayList<>();
         switch (perfil) {
             case "Administrador":
@@ -35,6 +37,7 @@ public class MenuMenuItemDao implements MenuMenuItenDaoI{
                 accesoReal.add(lista.get(4));
                 accesoReal.add(lista.get(5));
                 accesoReal.add(lista.get(6));
+                accesoReal.add(lista.get(7));
                 break;
             case "Root":
                 accesoReal = lista;
