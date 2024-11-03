@@ -94,15 +94,14 @@ public class AccountCreationControl {
         // Crear instancia de la clase genérica TableViewHelper
         TableViewHelper<Usuario> tableViewHelper = new TableViewHelper<>();
         LinkedHashMap<String, ColumnInfo> columns = new LinkedHashMap<>();
-        columns.put("ID", new ColumnInfo("id_usuario", 60.0)); // Columna visible "Columna 1" mapea al campo "campo1"
-        columns.put("Nombre", new ColumnInfo("nombre", 200.0)); // Columna visible "Columna 2" mapea al campo "campo2"
-        columns.put("Apellido", new ColumnInfo("apellido", 200.0)); // Columna visible "Columna 2" mapea al campo "campo2"
+        columns.put("ID", new ColumnInfo("idUsuario", 60.0)); // Columna visible "Columna 1" mapea al campo "campo1"
+        columns.put("Nombre", new ColumnInfo("nombre", 180.0)); // Columna visible "Columna 2" mapea al campo "campo2"
+        columns.put("Apellido", new ColumnInfo("apellido", 180.0)); // Columna visible "Columna 2" mapea al campo "campo2"
         columns.put("DNI", new ColumnInfo("dni", 100.0)); // Columna visible "Columna 2" mapea al campo "campo2"
-        columns.put("UserName", new ColumnInfo("user", 200.0)); // Columna visible "Columna 2" mapea al campo "campo2"
-        columns.put("Rol", new ColumnInfo("idPerfil.nombre", 150.0)); // Columna visible "Columna 2" mapea al campo "campo2"
-        columns.put("Telf", new ColumnInfo("telefono", 100.0));
-        columns.put("Clave", new ColumnInfo("clave", 200.0));
-        columns.put("ID Perfil", new ColumnInfo("id_perfil", 60.0));
+        columns.put("UserName", new ColumnInfo("user", 180.0)); // Columna visible "Columna 2" mapea al campo "campo2"
+        columns.put("Rol", new ColumnInfo("Perfil.nombre", 120.0)); // Columna visible "Columna 2" mapea al campo "campo2"
+        columns.put("Telf", new ColumnInfo("telf", 100.0));
+        columns.put("Contraseña", new ColumnInfo("clave", 180.0));
 
         // Definir las acciones de actualizar y eliminar
         Consumer<Usuario> updateAction = (Usuario usuario) -> {
@@ -189,8 +188,8 @@ public class AccountCreationControl {
             } else if (campo.equals("clave")) {
                 erroresOrdenados.put("clave", violacion.getMessage());
                 txtContra.getStyleClass().add("text-field-error");
-            } else if (campo.equals("idPerfil")) {
-                erroresOrdenados.put("idPerfil", violacion.getMessage());
+            } else if (campo.equals("Perfil")) {
+                erroresOrdenados.put("Perfil", violacion.getMessage());
                 cbxRol.getStyleClass().add("text-field-error");
             }
             // Mostrar el primer error en el orden deseado
@@ -211,7 +210,7 @@ public class AccountCreationControl {
         formulario.setDni(txtDNI.getText()==""?"0":txtDNI.getText());
         formulario.setTelf(txtTelf.getText()==""?"0":txtTelf.getText());
         String idxM=cbxRol.getSelectionModel().getSelectedItem()==null?"0":cbxRol.getSelectionModel().getSelectedItem().getKey();
-        formulario.setIdPerfil(ps.searchById(Long.parseLong(idxM)));
+        formulario.setPerfil(ps.searchById(Long.parseLong(idxM)));
         Set<ConstraintViolation<Usuario>> violaciones = validator.validate(formulario);
         // Si prefieres ordenarlo por el nombre de la propiedad que violó la restricción, podrías usar:
         List<ConstraintViolation<Usuario>> violacionesOrdenadasPorPropiedad = violaciones.stream()
@@ -264,7 +263,7 @@ public class AccountCreationControl {
                         if (usuario.getClave().toLowerCase().contains(lowerCaseFilter)) {
                             return true;
                         }
-                        if (usuario.getRol().toLowerCase().contains(lowerCaseFilter)) {
+                        if (usuario.getPerfil().getNombre().toLowerCase().contains(lowerCaseFilter)) {
                             return true;
                         }
                         if (String.valueOf(usuario.getDni()).contains(lowerCaseFilter)) {
@@ -292,7 +291,7 @@ public class AccountCreationControl {
         // Seleccionar el ítem en cbxMarca según el ID de Marca
         cbxRol.getSelectionModel().select(
                 cbxRol.getItems().stream()
-                        .filter(perfil -> Long.parseLong(perfil.getKey())==usuario.getIdPerfil().getIdPerfil())
+                        .filter(perfil -> Long.parseLong(perfil.getKey())==usuario.getPerfil().getIdPerfil())
                         .findFirst()
                         .orElse(null)
         );

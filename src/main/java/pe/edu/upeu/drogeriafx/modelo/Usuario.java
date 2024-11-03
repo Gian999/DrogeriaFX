@@ -34,10 +34,6 @@ public class Usuario {
     @Column(name = "user", nullable = false, unique = true, length = 20)
     private String user;
 
-    @Column(name = "rol", length = 6,nullable = false)
-    @Size(max = 15)
-    private String rol;
-
     @Size(max = 9)
     @Column(name = "telefono",nullable = false)
     private String telf;
@@ -48,6 +44,6 @@ public class Usuario {
 
     @JoinColumn(name = "id_perfil", referencedColumnName = "id_perfil")
     @ManyToOne(optional = false)
-    private Perfil idPerfil;
+    private Perfil Perfil;
 }
 
