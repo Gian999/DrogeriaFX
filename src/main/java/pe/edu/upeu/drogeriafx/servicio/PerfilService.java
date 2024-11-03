@@ -2,9 +2,11 @@ package pe.edu.upeu.drogeriafx.servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upeu.drogeriafx.dto.ComboBoxOption;
 import pe.edu.upeu.drogeriafx.modelo.Perfil;
 import pe.edu.upeu.drogeriafx.repositorio.PerfilRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -35,6 +37,16 @@ public class PerfilService {
 
     public void delete(Long id) {
         repo.deleteById(id);
+    }
+
+    public List<ComboBoxOption> listaPerfilCombobox(){
+        List<ComboBoxOption> listar =new ArrayList<>();
+        for (Perfil perf : repo.findAll()) {
+            listar.add(new ComboBoxOption(String.valueOf(perf.getIdPerfil()),
+                    perf.getNombre()
+            ));
+        }
+        return listar;
     }
 
     public Perfil searchById(Long id) {

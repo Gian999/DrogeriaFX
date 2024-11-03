@@ -20,6 +20,10 @@ public class UsuarioService {
         return repo.findAll();
     }
 
+    public Usuario update(Usuario to){
+        return repo.save(to);
+    }
+
     public Usuario update(Usuario to, Long id) {
         try {
             Usuario toe = repo.findById(id).orElse(null);
@@ -44,5 +48,6 @@ public class UsuarioService {
     public Usuario loginUsuario(String user, String clave) {
         return repo.loginUsuario(user, clave);
     }
+
 
 }

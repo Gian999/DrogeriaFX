@@ -51,7 +51,7 @@ public class LoginController {
 
                 SessionManager.getInstance().setUserId(usu.getIdUsuario());
                 SessionManager.getInstance().setUserName(usu.getUser());
-                SessionManager.getInstance().setNombrePerfil(usu.getIdPerfil().getNombre());
+                SessionManager.getInstance().setNombrePerfil(usu.getPerfil().getNombre());
 
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/guimainfx.fxml"));
                 loader.setControllerFactory(context::getBean);
