@@ -2,9 +2,11 @@ package pe.edu.upeu.drogeriafx.servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upeu.drogeriafx.dto.ComboBoxOption;
 import pe.edu.upeu.drogeriafx.modelo.Proveedor;
 import pe.edu.upeu.drogeriafx.repositorio.ProveedorRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -40,4 +42,17 @@ public class ProveedorService {
     public Proveedor searchById(Long id) {
         return repo.findById(id).orElse(null);
     }
+
+    public List<ComboBoxOption> listarCombobox(){
+        List<ComboBoxOption> listar=new ArrayList<>();
+        ComboBoxOption cb;
+        for(Proveedor cate : repo.findAll()) {
+            cb=new ComboBoxOption();
+            cb.setKey(String.valueOf(cate.getIdProveedor()));
+            cb.setValue(cate.getNombresRaso());
+            listar.add(cb);
+        }
+        return listar;
+    }
+
 }

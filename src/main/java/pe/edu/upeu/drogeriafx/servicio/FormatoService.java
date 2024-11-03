@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import pe.edu.upeu.drogeriafx.dto.ComboBoxOption;
 import pe.edu.upeu.drogeriafx.modelo.Formato;
 import pe.edu.upeu.drogeriafx.modelo.Marca;
+import pe.edu.upeu.drogeriafx.modelo.UnidadMedida;
 import pe.edu.upeu.drogeriafx.repositorio.FormatoRepository;
 
 import java.util.ArrayList;
@@ -43,9 +44,8 @@ public class FormatoService {
     /**
      * Search for a Formato entry by its ID.
      */
-    public Long searchById(Long id) {
-        Optional<Formato> formatoOpt = repo.findById(id);
-        return formatoOpt.orElse(null).getIdFormato(); // Return null if not found, or handle as needed
+    public Formato searchById(Long id){
+        return repo.findById(id).orElse(null);
     }
 
     /**

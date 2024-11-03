@@ -21,10 +21,7 @@ import pe.edu.upeu.drogeriafx.componente.TableViewHelper;
 import pe.edu.upeu.drogeriafx.componente.Toast;
 import pe.edu.upeu.drogeriafx.dto.ComboBoxOption;
 import pe.edu.upeu.drogeriafx.modelo.Producto;
-import pe.edu.upeu.drogeriafx.servicio.CategoriaService;
-import pe.edu.upeu.drogeriafx.servicio.MarcaService;
-import pe.edu.upeu.drogeriafx.servicio.ProductoService;
-import pe.edu.upeu.drogeriafx.servicio.UnidadMedidaService;
+import pe.edu.upeu.drogeriafx.servicio.*;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -43,9 +40,9 @@ public class ProductoController {
     @FXML
     ComboBox<ComboBoxOption> cbxMarca;
     @FXML
-    ComboBox<ComboBoxOption> cbxCategoria;
+    ComboBox<ComboBoxOption> cbxProovedor;
     @FXML
-    ComboBox<ComboBoxOption> cbxUnidMedida;
+    ComboBox<ComboBoxOption> cbxFormato;
     @FXML
     private TableView<Producto> tableView;
     @FXML
@@ -57,11 +54,11 @@ public class ProductoController {
     @Autowired
     MarcaService ms;
     @Autowired
-    CategoriaService cs;
+    ProveedorService cs;
     @Autowired
     ProductoService ps;
     @Autowired
-    UnidadMedidaService ums;
+    FormatoService ums;
 
     private Validator validator;
     ObservableList<Producto> listarProducto;
@@ -91,27 +88,27 @@ public class ProductoController {
         });
         new ComboBoxAutoComplete<>(cbxMarca);
 
-        cbxCategoria.setTooltip(new Tooltip());
-        cbxCategoria.getItems().addAll(cs.listarCombobox());
-        cbxCategoria.setOnAction(event -> {
-            ComboBoxOption selectedProduct = cbxCategoria.getSelectionModel().getSelectedItem();
+        cbxProovedor.setTooltip(new Tooltip());
+        cbxProovedor.getItems().addAll(cs.listarCombobox());
+        cbxProovedor.setOnAction(event -> {
+            ComboBoxOption selectedProduct = cbxProovedor.getSelectionModel().getSelectedItem();
             if (selectedProduct != null) {
                 String selectedId = selectedProduct.getKey(); // Obtener el ID
                 System.out.println("ID del producto seleccionado: " + selectedId);
             }
         });
-        new ComboBoxAutoComplete<>(cbxCategoria);
+        new ComboBoxAutoComplete<>(cbxProovedor);
 
-        cbxUnidMedida.setTooltip(new Tooltip());
-        cbxUnidMedida.getItems().addAll(ums.listarCombobox());
-        cbxUnidMedida.setOnAction(event -> {
-            ComboBoxOption selectedProduct = cbxUnidMedida.getSelectionModel().getSelectedItem();
+        cbxFormato.setTooltip(new Tooltip());
+        cbxFormato.getItems().addAll(ums.listarCombobox());
+        cbxFormato.setOnAction(event -> {
+            ComboBoxOption selectedProduct = cbxFormato.getSelectionModel().getSelectedItem();
             if (selectedProduct != null) {
                 String selectedId = selectedProduct.getKey(); // Obtener el ID
                 System.out.println("ID del producto seleccionado: " + selectedId);
             }
         });
-        new ComboBoxAutoComplete<>(cbxUnidMedida);
+        new ComboBoxAutoComplete<>(cbxFormato);
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         validator = factory.getValidator();
@@ -124,8 +121,8 @@ public class ProductoController {
         columns.put("P. Unitario", new ColumnInfo("pu", 150.0)); // Columna visible "Columna 2" mapea al campo "campo2"
         columns.put("Utilidad", new ColumnInfo("utilidad", 100.0)); // Columna visible "Columna 2" mapea al campo "campo2"
         columns.put("Marca", new ColumnInfo("marca.nombre", 200.0)); // Columna visible "Columna 2" mapea al campo "campo2"
-        columns.put("Categoria", new ColumnInfo("categoria.nombre", 200.0));
-        columns.put("Unid. Medida", new ColumnInfo("unidadMedida.nombreMedida",150.0));
+        columns.put("Proveedor", new ColumnInfo("proveedor.nombresRaso", 200.0));
+        columns.put("Formato", new ColumnInfo("formato.nombre",150.0));
 
 
         Consumer<Producto> updateAction = (Producto producto) -> {
@@ -169,8 +166,8 @@ public class ProductoController {
         txtStock.getStyleClass().remove("text-field-error");
         txtStockOld.getStyleClass().remove("text-field-error");
         cbxMarca.getStyleClass().remove("text-field-error");
-        cbxCategoria.getStyleClass().remove("text-field-error");
-        cbxUnidMedida.getStyleClass().remove("text-field-error");
+        cbxProovedor.getStyleClass().remove("text-field-error");
+        cbxFormato.getStyleClass().remove("text-field-error");
     }
 
     public void clearForm(){
@@ -181,8 +178,8 @@ public class ProductoController {
         txtStock.setText("");
         txtStockOld.setText("");
         cbxMarca.getSelectionModel().select(null);
-        cbxCategoria.getSelectionModel().select(null);
-        cbxUnidMedida.getSelectionModel().select(null);
+        cbxProovedor.getSelectionModel().select(null);
+        cbxFormato.getSelectionModel().select(null);
         idProductoCE=0L;
         limpiarError();
     }
@@ -222,10 +219,10 @@ public class ProductoController {
                 cbxMarca.getStyleClass().add("text-field-error");
             }else if (campo.equals("categoria")) {
                 erroresOrdenados.put("categoria", violacion.getMessage());
-                cbxCategoria.getStyleClass().add("text-field-error");
+                cbxProovedor.getStyleClass().add("text-field-error");
             }else if (campo.equals("unidadMedida")) {
                 erroresOrdenados.put("unidadmedida", violacion.getMessage());
-                cbxUnidMedida.getStyleClass().add("text-field-error");
+                cbxFormato.getStyleClass().add("text-field-error");
             }
         }
         // Mostrar el primer error en el orden deseado
@@ -245,10 +242,10 @@ public class ProductoController {
         formulario.setStockOld(Double.parseDouble(txtStockOld.getText()==""?"0":txtStockOld.getText()));
         String idxM=cbxMarca.getSelectionModel().getSelectedItem()==null?"0":cbxMarca.getSelectionModel().getSelectedItem().getKey();
         formulario.setMarca(ms.searchById(Long.parseLong(idxM)));
-        String idxC=cbxCategoria.getSelectionModel().getSelectedItem()==null?"0":cbxCategoria.getSelectionModel().getSelectedItem().getKey();
-        formulario.setCategoria(cs.searchById(Long.parseLong(idxC)));
-        String idxUM=cbxUnidMedida.getSelectionModel().getSelectedItem()==null?"0":cbxUnidMedida.getSelectionModel().getSelectedItem().getKey();
-        formulario.setUnidadMedida(ums.searchById(Long.parseLong(idxUM)));
+        String idxC=cbxProovedor.getSelectionModel().getSelectedItem()==null?"0":cbxProovedor.getSelectionModel().getSelectedItem().getKey();
+        formulario.setProveedor(cs.searchById(Long.parseLong(idxC)));
+        String idxF=cbxFormato.getSelectionModel().getSelectedItem()==null?"0":cbxFormato.getSelectionModel().getSelectedItem().getKey();
+        formulario.setFormato(ums.searchById(Long.parseLong(idxF)));
         Set<ConstraintViolation<Producto>> violaciones = validator.validate(formulario);
 // Si prefieres ordenarlo por el nombre de la propiedad que violó la restricción, podrías usar:
         List<ConstraintViolation<Producto>> violacionesOrdenadasPorPropiedad = violaciones.stream()
@@ -267,6 +264,14 @@ public class ProductoController {
                 Toast.showToast(stage, "Se actualizó correctamente!!", 2000, with, h);
                 clearForm();
             }else{
+                System.out.println("Nombre: " + formulario.getNombre());
+                System.out.println("Precio Unitario: " + formulario.getPu());
+                System.out.println("Marca ID: " + formulario.getMarca().getIdMarca());
+                System.out.println("Proovedor: " + formulario.getProveedor().getNombresRaso());
+                System.out.println("Formato: " + formulario.getFormato().getNombre());
+
+// Repite para otros campos que consideres importantes
+
                 ps.save(formulario);
                 Toast.showToast(stage, "Se guardo correctamente!!", 2000, with, h);
                 clearForm();
@@ -300,7 +305,7 @@ public class ProductoController {
                         if (producto.getMarca().getNombre().toLowerCase().contains(lowerCaseFilter)) {
                             return true;
                         }
-                        if (producto.getCategoria().getNombre().toLowerCase().contains(lowerCaseFilter)) {
+                        if (producto.getProveedor().getNombresRaso().toLowerCase().contains(lowerCaseFilter)) {
                             return true;
                         }
                         return false; // Si no coincide con ningún campo
@@ -327,16 +332,16 @@ public class ProductoController {
                         .orElse(null)
         );
 // Seleccionar el ítem en cbxCategoria según el ID de Categoria
-        cbxCategoria.getSelectionModel().select(
-                cbxCategoria.getItems().stream()
-                        .filter(categoria -> Long.parseLong(categoria.getKey())==producto.getCategoria().getIdCategoria())
+        cbxProovedor.getSelectionModel().select(
+                cbxProovedor.getItems().stream()
+                        .filter(provedor -> Long.parseLong(provedor.getKey())==producto.getProveedor().getIdProveedor())
                         .findFirst()
                         .orElse(null)
         );
 // Seleccionar el ítem en cbxUnidMedida según el ID de Unidad de Medida
-        cbxUnidMedida.getSelectionModel().select(
-                cbxUnidMedida.getItems().stream()
-                        .filter(unidad -> Long.parseLong(unidad.getKey())==producto.getUnidadMedida().getIdUnidad())
+        cbxFormato.getSelectionModel().select(
+                cbxFormato.getItems().stream()
+                        .filter(formato -> Long.parseLong(formato.getKey())==producto.getFormato().getIdFormato())
                         .findFirst()
                         .orElse(null)
         );

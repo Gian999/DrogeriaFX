@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.drogeriafx.control.ProductoController">
+<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.drogeriafx.control.ProductoController">
     <children>
         <VBox layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
             <children>
@@ -61,8 +61,8 @@
                                         <Label text="Utilidad" GridPane.rowIndex="3" />
                                         <Label text="Stock" GridPane.rowIndex="4" />
                                         <Label text="Marca" GridPane.rowIndex="5" />
-                                        <Label text="Categoría" GridPane.rowIndex="6" />
-                                        <Label text="Unidad Medida" GridPane.rowIndex="7" />
+                                        <Label text="Proovedores" GridPane.rowIndex="6" />
+                                        <Label text="Formato" GridPane.rowIndex="7" />
                                         <TextField fx:id="txtNombreProducto" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
                                             <opaqueInsets>
                                                 <Insets />
@@ -107,12 +107,12 @@
                                                 <Insets left="5.0" right="5.0" />
                                             </GridPane.margin>
                                         </ComboBox>
-                                        <ComboBox fx:id="cbxCategoria" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="6">
+                                        <ComboBox fx:id="cbxProovedor" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="6">
                                             <GridPane.margin>
                                                 <Insets left="5.0" right="5.0" />
                                             </GridPane.margin>
                                         </ComboBox>
-                                        <ComboBox fx:id="cbxUnidMedida" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="7">
+                                        <ComboBox fx:id="cbxFormato" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="7">
                                             <GridPane.margin>
                                                 <Insets left="5.0" right="5.0" />
                                             </GridPane.margin>
@@ -122,7 +122,7 @@
                                     <Insets left="5.0" right="5.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button maxWidth="1.7976931348623157E308" onAction="#cancelarAccion" mnemonicParsing="false" text="Cancelar" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cancelarAccion" text="Cancelar" GridPane.columnIndex="2" GridPane.rowIndex="8">
                                  <GridPane.margin>
                                     <Insets left="5.0" right="5.0" />
                                  </GridPane.margin>

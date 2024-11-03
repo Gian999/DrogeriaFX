@@ -42,11 +42,11 @@ public class Producto {
     @Column(name = "stockold", nullable = false)
     private Double stockOld;
 
-    @NotNull(message = "Categoria no puede estar vacío")
+    @NotNull(message = "Proovedor no puede estar vacío")
     @ManyToOne
-    @JoinColumn(name = "id_categoria", referencedColumnName = "id_categoria",
-            nullable = false, foreignKey = @ForeignKey(name = "FK_CATEGORIA_PRODUCTO") )
-    private Categoria categoria;
+    @JoinColumn(name = "id_proveedor", referencedColumnName = "id_proveedor",
+            nullable = false, foreignKey = @ForeignKey(name = "FK_PROVEEDOR_PRODUCTO") )
+    private Proveedor proveedor;
 
     @NotNull(message = "Marca no puede estar vacío")
     @ManyToOne
@@ -54,9 +54,9 @@ public class Producto {
             nullable = false, foreignKey = @ForeignKey(name = "FK_MARCA_PRODUCTO"))
     private Marca marca;
 
-    @NotNull(message = "Unidad Medida no puede estar vacío")
+    @NotNull(message = "Formato no puede estar vacío")
     @ManyToOne
-    @JoinColumn(name = "id_unidad", referencedColumnName = "id_unidad",
-            nullable = false, foreignKey = @ForeignKey(name = "FK_UNIDADMEDIDA_PRODUCTO"))
-    private UnidadMedida unidadMedida;
+    @JoinColumn(name = "id_formato", referencedColumnName = "id_formato",
+            nullable = false, foreignKey = @ForeignKey(name = "FK_FORMATO_PRODUCTO"))
+    private Formato formato;
 }
