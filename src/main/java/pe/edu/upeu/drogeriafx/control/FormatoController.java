@@ -195,6 +195,7 @@ public class FormatoController {
     public void editForm(Formato formato) {
         txtNombreFormato.setText(formato.getNombre());
         txtDescripcion.setText(formato.getDescripcion());
+
         cbxTipoFormato.getSelectionModel().select(cbxTipoFormato.getItems().stream()
                 .filter(item -> item.getKey().equals(String.valueOf(formato.getTipoFormato().getIdFormato())))
                 .findFirst().orElse(null));

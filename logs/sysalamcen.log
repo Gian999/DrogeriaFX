@@ -746,3 +746,545 @@ java.lang.IllegalArgumentException: Could not resolve domain type of interface p
 2024-11-02T19:49:06.518-05:00  INFO 19812 --- [DrogeriaFX] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-02T19:49:06.530-05:00  INFO 19812 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-11-02T19:49:06.532-05:00  INFO 19812 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T21:43:49.631-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 22.0.1 with PID 21588 (started by edson in C:\Users\edson\IdeaProjects\DrogeriaFX)
+2024-11-02T21:43:49.636-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T21:43:51.291-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T21:43:51.402-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 17 JPA repository interfaces.
+2024-11-02T21:43:51.915-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T21:43:52.018-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T21:43:52.047-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T21:43:52.424-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T21:43:52.472-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T21:43:52.765-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@144c7e3c
+2024-11-02T21:43:52.767-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T21:43:54.307-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T21:43:54.372-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T21:43:54.931-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-02T21:43:55.539-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 6.762 seconds (process running for 7.684)
+2024-11-02T21:44:17.149-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T21:44:17.152-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T21:44:17.164-05:00  INFO 21588 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T22:00:08.233-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 22.0.1 with PID 27836 (started by edson in C:\Users\edson\IdeaProjects\DrogeriaFX)
+2024-11-02T22:00:08.236-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T22:00:09.095-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T22:00:09.202-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 17 JPA repository interfaces.
+2024-11-02T22:00:09.804-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T22:00:09.863-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T22:00:09.901-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T22:00:10.196-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T22:00:10.247-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T22:00:10.558-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5a7ef879
+2024-11-02T22:00:10.560-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T22:00:12.048-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T22:00:12.097-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T22:00:12.578-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-02T22:00:13.013-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 5.527 seconds (process running for 6.304)
+2024-11-02T22:00:30.495-05:00  WARN 27836 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'id_usuario' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@6cf1b51a with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property id_usuario
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:00:30.500-05:00  WARN 27836 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'telefono' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@1dc6096a with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property telefono
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:00:30.500-05:00  WARN 27836 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'id_perfil' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@165eb146 with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property id_perfil
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:03:31.143-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T22:03:31.145-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T22:03:31.153-05:00  INFO 27836 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T22:04:39.875-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 22.0.1 with PID 8468 (started by edson in C:\Users\edson\IdeaProjects\DrogeriaFX)
+2024-11-02T22:04:39.877-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T22:04:40.766-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T22:04:40.863-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 17 JPA repository interfaces.
+2024-11-02T22:04:41.483-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T22:04:41.538-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T22:04:41.567-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T22:04:41.905-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T22:04:41.958-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T22:04:42.227-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@587b1038
+2024-11-02T22:04:42.229-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T22:04:43.723-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T22:04:43.767-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T22:04:44.227-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-02T22:04:44.660-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 5.604 seconds (process running for 6.474)
+2024-11-02T22:05:04.966-05:00  WARN 8468 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'id_usuario' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@6368957 with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property id_usuario
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:05:04.971-05:00  WARN 8468 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'telefono' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@7b525f38 with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property telefono
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:05:04.972-05:00  WARN 8468 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'id_perfil' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@352d92d9 with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property id_perfil
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:07:27.865-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T22:07:27.870-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T22:07:27.880-05:00  INFO 8468 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T22:08:05.679-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 22.0.1 with PID 8884 (started by edson in C:\Users\edson\IdeaProjects\DrogeriaFX)
+2024-11-02T22:08:05.682-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T22:08:06.562-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T22:08:06.670-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 17 JPA repository interfaces.
+2024-11-02T22:08:07.191-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T22:08:07.248-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T22:08:07.276-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T22:08:07.572-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T22:08:07.604-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T22:08:07.866-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2c0de75
+2024-11-02T22:08:07.868-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T22:08:09.311-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T22:08:09.372-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T22:08:09.882-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-02T22:08:10.314-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 5.418 seconds (process running for 6.23)
+2024-11-02T22:08:29.223-05:00  WARN 8884 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'id_usuario' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@303d84c7 with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property id_usuario
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:08:29.228-05:00  WARN 8884 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'telefono' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@228ae30b with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property telefono
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:08:29.230-05:00  WARN 8884 --- [DrogeriaFX] [JavaFX Application Thread] javafx.scene.control                     : Can not retrieve property 'id_perfil' in PropertyValueFactory: javafx.scene.control.cell.PropertyValueFactory@3661f5d5 with provided class type: class pe.edu.upeu.drogeriafx.modelo.Usuario
+
+java.lang.IllegalStateException: Cannot read from unreadable property id_perfil
+	at com.sun.javafx.property.PropertyReference.get(PropertyReference.java:170) ~[javafx-base-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.getCellDataReflectively(PropertyValueFactory.java:184) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:154) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.cell.PropertyValueFactory.call(PropertyValueFactory.java:133) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:593) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableColumn.getCellObservableValue(TableColumn.java:578) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.updateItem(TableCell.java:646) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableCell.indexChanged(TableCell.java:469) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.IndexedCell.updateIndex(IndexedCell.java:120) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.updateCells(TableRowSkinBase.java:539) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkinBase.<init>(TableRowSkinBase.java:159) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.TableRowSkin.<init>(TableRowSkin.java:89) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.TableRow.createDefaultSkin(TableRow.java:213) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control.doProcessCSS(Control.java:897) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.Control$1.doProcessCSS(Control.java:89) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.control.ControlHelper.processCSSImpl(ControlHelper.java:67) ~[javafx-controls-16-win.jar:na]
+	at com.sun.javafx.scene.NodeHelper.processCSS(NodeHelper.java:145) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.processCSS(Node.java:9547) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Node.applyCss(Node.java:9634) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.setCellIndex(VirtualFlow.java:1743) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCell(VirtualFlow.java:1720) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.getCellLength(VirtualFlow.java:1846) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.computeViewportOffset(VirtualFlow.java:2758) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.control.skin.VirtualFlow.layoutChildren(VirtualFlow.java:1239) ~[javafx-controls-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1207) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Parent.layout(Parent.java:1214) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene.doLayoutPass(Scene.java:576) ~[javafx-graphics-16-win.jar:na]
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2476) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$2(Toolkit.java:413) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:412) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:439) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:563) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:543) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:536) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$11(QuantumToolkit.java:342) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-16-win.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-16-win.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-11-02T22:09:33.258-05:00  WARN 8884 --- [DrogeriaFX] [JavaFX Application Thread] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 19, SQLState: null
+2024-11-02T22:09:33.258-05:00 ERROR 8884 --- [DrogeriaFX] [JavaFX Application Thread] o.h.engine.jdbc.spi.SqlExceptionHelper   : [SQLITE_CONSTRAINT_NOTNULL] A NOT NULL constraint failed (NOT NULL constraint failed: upeu_usuario.rol)
+2024-11-02T22:10:50.059-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T22:10:50.062-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T22:10:50.067-05:00  INFO 8884 --- [DrogeriaFX] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

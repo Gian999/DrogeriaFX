@@ -2,6 +2,7 @@ package pe.edu.upeu.drogeriafx.servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upeu.drogeriafx.modelo.Producto;
 import pe.edu.upeu.drogeriafx.modelo.Usuario;
 import pe.edu.upeu.drogeriafx.repositorio.UsuarioRepository;
 
@@ -18,6 +19,10 @@ public class UsuarioService {
 
     public List<Usuario> list() {
         return repo.findAll();
+    }
+
+    public Usuario update(Usuario to){
+        return repo.save(to);
     }
 
     public Usuario update(Usuario to, Long id) {

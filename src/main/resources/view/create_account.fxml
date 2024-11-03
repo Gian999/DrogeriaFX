@@ -107,14 +107,14 @@
                                     <GridPane.margin>
                                         <Insets right="35.0" />
                                     </GridPane.margin></TextField>
-                                <Button fx:id="btnCrear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: white;" text="Crear" textFill="#2e354f" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                <Button fx:id="btnCrear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#validarFormulario" style="-fx-background-color: white;" text="Crear" textFill="#2e354f" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                     <GridPane.margin>
                                         <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
                                     </GridPane.margin>
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Button>
-                                <Button fx:id="btnBorrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: white;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                <Button fx:id="btnBorrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cancelarAccion" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: white;" GridPane.columnIndex="4" GridPane.rowIndex="4">
                                     <GridPane.margin>
                                         <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
                                     </GridPane.margin>
@@ -143,6 +143,13 @@
                                         <Font name="System Bold" size="12.0" />
                                     </font>
                                 </Button>
+                        <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" prefHeight="34.0" prefWidth="256.0" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
                             </children>
                         </GridPane>
                     </children></AnchorPane>
