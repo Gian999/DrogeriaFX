@@ -43,7 +43,7 @@ public class MenuMenuItemDao implements MenuMenuItenDaoI{
             case "Root":
                 accesoReal = lista;
                 break;
-            case "Reporte":
+            case "Reporter":
                 accesoReal.add(lista.get(0));
                 accesoReal.add(lista.get(5));
                 accesoReal.add(lista.get(6));
