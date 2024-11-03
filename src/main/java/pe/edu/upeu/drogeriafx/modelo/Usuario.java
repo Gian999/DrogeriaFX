@@ -1,6 +1,7 @@
 package pe.edu.upeu.drogeriafx.modelo;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,12 +18,33 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private Long idUsuario;
+
+    @Column(name = "nombre", nullable = false)
+    @Size(max = 30)
+    private String nombre;
+
+    @Column(name = "apellido", nullable = false)
+    @Size(max = 30)
+    private String apellido;
+
+    @Size(max = 8)
+    @Column(name = "dni",nullable = false)
+    private String dni;
+
     @Column(name = "user", nullable = false, unique = true, length = 20)
     private String user;
+
+    @Column(name = "rol", length = 6,nullable = false)
+    @Size(max = 15)
+    private String rol;
+
+    @Size(max = 9)
+    @Column(name = "telefono",nullable = false)
+    private String telf;
+
+
     @Column(name = "clave", nullable = false, length = 100)
     private String clave;
-    @Column(name = "estado", nullable = false, length = 10)
-    private String estado;
 
     @JoinColumn(name = "id_perfil", referencedColumnName = "id_perfil")
     @ManyToOne(optional = false)
